@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="686.0" style="-fx-background-color: Aqua;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="justtap.ProductView">
+   <children>
+      <BorderPane id="GoodTextField" fx:id="GoodTextField" prefHeight="558.0" prefWidth="686.0" style="-fx-background-color: aliceblue;">
+         <top>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="686.0" spacing="20.0" style="-fx-background-color: silver;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="70.0" prefWidth="183.0" text="Viewi What we Have" textFill="#7eeb0e">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Untitled.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="84.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@DES301S.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="67.0" prefWidth="250.0" spacing="5.0" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ImageView fx:id="imageView" fitHeight="350.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@images..gif" />
+               </image>
+            </ImageView>
+         </center>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <bottom>
+            <HBox prefHeight="38.0" prefWidth="686.0" spacing="20.0" style="-fx-background-color: cyan;" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <TextField fx:id="loadingField" editable="false" prefHeight="33.0" prefWidth="376.0" />
+                  <Button fx:id="logout1" mnemonicParsing="false" onAction="#previous" prefHeight="25.0" prefWidth="77.0" text="Log out" />
+                  <Button mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="66.0" text="Add item" />
+                  <Button mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+                  <Button minWidth="36.0" mnemonicParsing="false" onAction="#proceed" prefHeight="23.0" prefWidth="36.0" text="Buy" />
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <ListView fx:id="productlist" onMouseClicked="#display" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="453.0" prefWidth="139.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="selectedproductdisplay" prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea fx:id="showitemsdisplay" prefHeight="259.0" prefWidth="139.0" />
+                  <TextField />
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

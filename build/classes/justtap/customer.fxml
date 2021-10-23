@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.customerController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: skyblue;">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="274.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../sky-2798776_1920.width-800.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="288.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Untitled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="293.0" layoutY="169.0" prefHeight="36.0" prefWidth="191.0" text="Tab to get" textFill="#9e1313">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewing" layoutX="33.0" layoutY="300.0" onMouseClicked="#justLook" prefHeight="40.0" prefWidth="191.0" text="Viewing click here" textFill="#c40af0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="buying" layoutX="293.0" layoutY="300.0" onMouseClicked="#tabToTake" prefHeight="40.0" prefWidth="191.0" text="Buying click here" textFill="#0a66fac9">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="14.0" prefHeight="61.0" prefWidth="469.0" text="Welcome to Just Tab" textFill="#48ade4">
+               <font>
+                  <Font name="System Italic" size="51.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
+
